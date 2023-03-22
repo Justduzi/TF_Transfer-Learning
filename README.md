@@ -9,9 +9,9 @@ The Food101 dataset consists of 101,000 images of food items from 101 different 
 
 In this notebook, we perform data augmentation on the training set to increase the number of images available for training. We apply the following augmentations:
 
-. Randomly flipping the images horizontally
-. Randomly rotating the images by a degree between 0 and 360
-. Randomly zooming in on the images by a factor between 0.8 and 1.2
+- Randomly flipping the images horizontally
+- Randomly rotating the images by a degree between 0 and 360
+- Randomly zooming in on the images by a factor between 0.8 and 1.2
 
 # Transfer Learning
 We use the EfficientB0 model pre-trained on the ImageNet dataset as the base model for transfer learning. We add a new fully connected layer with 101 output units, one for each category in the Food101 dataset. We freeze the weights of all the layers in the EfficientB0 model except for the last fully connected layer, which we train on the Food101 dataset.
